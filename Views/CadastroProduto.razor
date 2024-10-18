@@ -1,0 +1,87 @@
+﻿@page "/cadastro"
+@using CatalogoProdutos.Data
+@using CatalogoProdutos.Models
+@inject CatalogoProdutosDbContext DbContext
+@inject NavigationManager NavigationManager
+
+<h3>Cadastro de Produto</h3>
+
+<EditForm Model="@produto" OnValidSubmit="SalvarProduto">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <InputText id="nome" @bind-Value="produto.Nome" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="preco">Preço de Venda:</label>
+        <InputNumber id="preco" @bind-Value="produto.PrecoVenda" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <InputTextArea id="descricao" @bind-Value="produto.Descricao" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="quantidade">Quantidade:</label>
+        <InputNumber id="quantidade" @bind-Value="produto.Quantidade" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="tipo">Tipo:</label>
+        <InputSelect id="TipoProduto" @bind-Value="produto.TipoProduto" class="form-control">
+            <option value="">Selecione um tipo</option>
+            <option value="Orgânico">Orgânico</option>
+            <option value="Não organico">Não orgânico</option>
+        </InputSelect>
+    </div>
+
+    <div class="form-group">
+        <label for="dataCadastro">Data de Cadastro:</label>
+        <InputDate id="dataCadastro" @bind-Value="produto.DataCadastro" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="button" class="btn btn-secondary" @onclick="Voltar">Voltar</button>
+</EditForm>
+
+@if (exibirMensagem)
+{
+        <div class="mensagem-sucesso">
+            Produto salvo com sucesso!
+        </div>
+}
+
+@code {
+    private Produto produto = new Produto();
+    private bool exibirMensagem = false;
+    private System.Threading.Timer? timer;
+
+    private async Task SalvarProduto()
+    {
+        produto.DataCadastro = DateTime.Now;
+        DbContext.Produtos.Add(produto);
+        await DbContext.SaveChangesAsync();
+
+        exibirMensagem = true;
+
+        StateHasChanged();
+
+        timer = new System.Threading.Timer(_ =>
+        {
+            exibirMensagem = false;
+            InvokeAsync(StateHasChanged);
+
+        }, null, 6000, System.Threading.Timeout.Infinite);
+
+        produto = new Produto();
+    }
+
+    private void Voltar()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

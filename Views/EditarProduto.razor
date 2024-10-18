@@ -1,0 +1,69 @@
+﻿@page "/editar/{id:int}"
+@using CatalogoProdutos.Data
+@using CatalogoProdutos.Models
+@inject CatalogoProdutosDbContext DbContext
+@inject NavigationManager NavigationManager
+
+<h3>Editar Produto</h3>
+
+<EditForm Model="produto" OnValidSubmit="SalvarAlteracoes">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="Nome">Nome</label>
+        <InputText id="Nome" class="form-control" @bind-Value="produto.Nome" />
+    </div>
+
+    <div class="form-group">
+        <label for="PrecoVenda">Preço de Venda</label>
+        <InputNumber id="PrecoVenda" class="form-control" @bind-Value="produto.PrecoVenda" />
+    </div>
+
+    <div class="form-group">
+        <label for="Quantidade">Quantidade</label>
+        <InputNumber id="Quantidade" class="form-control" @bind-Value="produto.Quantidade" />
+    </div>
+
+    <div class="form-group">
+        <label for="tipo">Tipo:</label>
+        <InputSelect id="TipoProduto" @bind-Value="produto.TipoProduto" class="form-control">
+            <option value="">Selecione um tipo</option>
+            <option value="Orgânico">Orgânico</option>
+            <option value="Não organico">Não orgânico</option>
+        </InputSelect>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Salvar</button>
+    <button class="btn btn-secondary" @onclick="Cancelar">Cancelar</button>
+</EditForm>
+
+@code {
+    [Parameter]
+
+    public int Id { get; set; }
+
+    private Produto produto = new Produto();
+
+    protected override async Task OnInitializedAsync()
+    {
+        produto = await DbContext.Produtos.FindAsync(Id);
+
+        if (produto == null)
+        {
+            NavigationManager.NavigateTo("/lista");
+        }
+    }
+
+    private async Task SalvarAlteracoes()
+    {
+        DbContext.Produtos.Update(produto);
+        await DbContext.SaveChangesAsync();
+        NavigationManager.NavigateTo("/lista");
+    }
+
+    private void Cancelar()
+    {
+        NavigationManager.NavigateTo("/lista");
+    }
+}

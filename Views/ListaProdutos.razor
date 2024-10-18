@@ -1,0 +1,128 @@
+﻿@page "/lista"
+@using CatalogoProdutos.Data
+@using CatalogoProdutos.Models
+@using Microsoft.EntityFrameworkCore
+@inject CatalogoProdutosDbContext DbContext
+@inject NavigationManager NavigationManager
+
+<h3>Lista de Produtos</h3>
+
+@if (produtos == null)
+{
+    <p>Carregando...</p>
+}
+else if (!produtos.Any())
+{
+    <p>Nenhum produto cadastrado.</p>
+}
+
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Tipo</th>
+                <th>Data de Cadastro</th>
+                <th>Valor Total (R$)</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var produto in produtosPaginados)
+            {
+                <tr>
+                    <td>@produto.Nome</td>
+                    <td>@produto.PrecoVenda.ToString("C")</td>
+                    <td>@produto.Quantidade</td>
+                    <td>@produto.TipoProduto</td>
+                    <td>@produto.DataCadastro.ToString("dd/MM/yyyy")</td>
+                    <td>@produto.ValorTotal.ToString("C")</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @onclick="() => ExcluirProduto(produto.Id)">
+                            <i class="fas fa-trash"></i> Excluir
+                        </button>
+
+                        <button class="btn btn-primary btn-sm mr-2" @onclick="() => EditarProduto(produto.Id)">
+                            <i class="fas fa-edit"></i> Editar
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        @for (int i = 1; i <= totalPaginas; i++)
+        {
+            int pageNumber = i;
+            <button class="btn @(paginaAtual == pageNumber ? "btn-primary" : "btn-outline-primary")"
+                    @onclick="() => MudarPagina(pageNumber)">
+                @i
+            </button>
+        }
+    </div>
+}
+<br />
+<button class="btn btn-secondary" @onclick="Voltar">Voltar</button>
+
+@code {
+    private List<Produto> produtos;
+
+    private List<Produto> produtosPaginados;
+
+    private int paginaAtual = 1;
+
+    private int itensPorPagina = 5;
+
+    private int totalPaginas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregarProdutos();
+    }
+
+    private async Task CarregarProdutos()
+    {
+        produtos = await DbContext.Produtos.ToListAsync();
+
+        totalPaginas = (int)Math.Ceiling(produtos.Count / (double)itensPorPagina);
+
+        AtualizarProdutosPaginados();
+    }
+
+    private void AtualizarProdutosPaginados()
+    {
+        produtosPaginados = produtos.Skip((paginaAtual - 1) * itensPorPagina).Take(itensPorPagina).ToList();
+    }
+
+    private void MudarPagina(int numeroPagina)
+    {
+        paginaAtual = numeroPagina;
+        AtualizarProdutosPaginados();
+    }
+
+    private async Task ExcluirProduto(int id)
+    {
+        var produto = await DbContext.Produtos.FindAsync(id);
+
+        if (produto != null)
+        {
+            DbContext.Produtos.Remove(produto);
+            await DbContext.SaveChangesAsync();
+            await CarregarProdutos();
+        }
+    }
+
+    private void EditarProduto(int id)
+    {
+        NavigationManager.NavigateTo($"/editar/{id}");
+    }
+
+    private void Voltar()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}

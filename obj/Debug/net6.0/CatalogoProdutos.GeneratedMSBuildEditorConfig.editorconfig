@@ -1,0 +1,59 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CatalogoProdutos
+build_property.RootNamespace = CatalogoProdutos
+build_property.ProjectDir = C:\Users\Lucas.Marques\Desktop\CatalogoProdutos\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Lucas.Marques\Desktop\CatalogoProdutos
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Views/CadastroProduto.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdXRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Views/EditarProduto.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdGFyUHJvZHV0by5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Views/ListaProdutos.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFQcm9kdXRvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Views/Menu.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Views/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-xhqq7ipkfg
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Views/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-qcsjfnlcpv
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lucas.Marques/Desktop/CatalogoProdutos/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

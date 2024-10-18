@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|c:\\users\\lucas.marques\\desktop\\catalogoprodutos\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|solutionrelative:models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|c:\\users\\lucas.marques\\desktop\\catalogoprodutos\\views\\editarproduto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|solutionrelative:views\\editarproduto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|c:\\users\\lucas.marques\\desktop\\catalogoprodutos\\views\\listaprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|solutionrelative:views\\listaprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|c:\\users\\lucas.marques\\desktop\\catalogoprodutos\\views\\cadastroproduto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|solutionrelative:views\\cadastroproduto.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|c:\\users\\lucas.marques\\desktop\\catalogoprodutos\\views\\listaprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|solutionrelative:views\\listaprodutos.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{355D46F0-38EB-44F1-A40F-EA63EADF7112}|CatalogoProdutos.csproj|c:\\users\\lucas.marques\\desktop\\catalogoprodutos\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditarProduto.razor",
-              "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\EditarProduto.razor",
-              "RelativeDocumentMoniker": "Views\\EditarProduto.razor",
-              "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\EditarProduto.razor",
-              "RelativeToolTip": "Views\\EditarProduto.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T16:29:52.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CadastroProduto.razor",
-              "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\CadastroProduto.razor",
-              "RelativeDocumentMoniker": "Views\\CadastroProduto.razor",
-              "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\CadastroProduto.razor",
-              "RelativeToolTip": "Views\\CadastroProduto.razor",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwCcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T16:05:07.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Models\\Produto.cs",
-              "RelativeToolTip": "Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:49:14.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProdutosController.cs",
-              "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Controllers\\ProdutosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
-              "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Controllers\\ProdutosController.cs",
-              "RelativeToolTip": "Controllers\\ProdutosController.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAcwGQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T06:40:23.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ListaProdutos.razor",
               "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\ListaProdutos.razor",
               "RelativeDocumentMoniker": "Views\\ListaProdutos.razor",
               "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\ListaProdutos.razor",
               "RelativeToolTip": "Views\\ListaProdutos.razor",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T06:40:04.977Z",
+              "WhenOpened": "2024-10-18T17:44:42.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CadastroProduto.razor",
+              "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\CadastroProduto.razor",
+              "RelativeDocumentMoniker": "Views\\CadastroProduto.razor",
+              "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Views\\CadastroProduto.razor",
+              "RelativeToolTip": "Views\\CadastroProduto.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T17:44:31.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Users\\Lucas.Marques\\Desktop\\CatalogoProdutos\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T17:42:35.847Z",
               "EditorCaption": ""
             }
           ]

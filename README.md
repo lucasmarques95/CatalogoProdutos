@@ -1,7 +1,7 @@
-# Sistema de Catálogo de Produtos - Descontrolada®
+# Sistema de Catálogo de Produtos
 
 ## Descrição
-Este é um sistema simples de catálogo de produtos criado para a varejista **Descontrolada®**, com o objetivo de melhorar o controle de seus produtos. Ele permite o cadastro e a visualização dos produtos vendidos pela empresa.
+Este é um sistema de catálogo de produtos criado para a varejista, com o objetivo de melhorar o controle de seus produtos. Ele permite o cadastro e a visualização dos produtos vendidos pela empresa.
 
 ## Funcionalidades
 - **Cadastro de Produtos**: Nome, preço de venda, descrição, quantidade, tipo (Orgânico ou Não orgânico) e data de cadastro.
